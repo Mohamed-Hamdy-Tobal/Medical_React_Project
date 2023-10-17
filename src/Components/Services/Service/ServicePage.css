@@ -1,0 +1,109 @@
+.service-page {
+    padding: 100px 30px;
+    overflow: hidden;
+    position: relative;
+}
+.service-page .slide {
+    padding: 0 20px 20px 0px;
+}
+.service-page .main-slider {
+    padding: 15px 15px 15px;
+    border-radius: 5px;
+}
+.service-page .box {
+    background-color: #fff;
+    background-image: url('../../../imgs/slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px rgba(0,0,0,.08);
+    overflow: hidden;
+    padding: 40px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-page .box span {
+    background: #fff;
+    display: block;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    margin-bottom: 20px;
+}
+.service-page .box span svg{
+    width: 65px;
+}
+.service-page .box:hover svg {
+    position: relative;
+    animation: zenzen .3s linear alternate;
+    -webkit-animation: zenzen .3s linear alternate;
+}
+.service-page .box h1 {
+    font-size: 28px;
+    align-self: flex-start;
+    font-weight: 900;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.service-page .box p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.service-page .box button {
+    color: var(--btn-color);
+    background: #565acf3d;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.service-page .box button:hover {
+    background: var(--btn-color);
+    color:#fff;
+}
+.service-page .heading-bx p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+.service-page .ser-btn {
+    box-shadow: 0 6px 20px 0 #f17732a8 !important;
+}
+.service-page .ser-btn:hover {
+    background-color: #f17732;
+}
+.service-page .ser-btn:is(:hover, :active, :focus) {
+    background-color: #ffa36a !important;
+}
+.slick-prev, .slick-next {
+    display: none !important;
+}
+/* End Service */
+
+
+@media (min-width: 567px) and (max-width: 767px) {
+    .service-page .box h1 {
+        font-size: 21px;
+    }
+    .service-page .box p {
+        font-size: 14px;
+    }
+    .service-page .box button {
+        font-size: 15px;
+        font-weight: 600;
+    }
+}

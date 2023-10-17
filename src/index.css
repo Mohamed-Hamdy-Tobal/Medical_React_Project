@@ -1,0 +1,131 @@
+/* 1 - Start Global Styles */
+*, ::after, ::before {
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+:root {
+  --main-color : #1f2278;
+  --orange-color: #f17732;
+  --btn-color: #565acf;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Tajawal', sans-serif !important;
+  /* background-color: #333 !important; */
+}
+ul {
+  list-style: none !important;
+  padding: 0px !important;
+  margin : 0px !important;
+}
+a {
+  text-decoration: none !important;
+}
+input:focus,
+textarea:focus  {
+  outline: none !important;
+}
+
+/* Main Section */
+.section-header {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.section-header h5{
+  color: var(--orange-color);
+  background-image: url('./imgs/8.png');
+  font-size: 20px;
+  padding: 2px 20px;
+  font-weight: 700;
+  width: fit-content;
+}
+.section-header h1{
+  font-weight: 800;
+  color: var(--main-color);
+  font-size: 40px;
+}
+.account-wraper1 {
+  padding-bottom: 100px;
+}
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.sec-padd {
+  padding: 100px 0px
+}
+.section-sp3 {
+  padding-bottom: 0;
+  padding-top: 100px;
+}
+@media only screen and (max-width: 991px) {
+  .section-sp3 {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 566px) {
+  .sec-padd {
+    padding: 60px 0px
+  }
+}
+
+.sec-neg {
+  margin-top: -135px;
+}
+.sec-pos {
+  margin-bottom: 135px;
+}
+
+/* Start Main Style Animation */
+.square {
+  animation: up-down 1s linear infinite alternate;
+  -webkit-animation: up-down 1s linear infinite alternate;
+}
+.square-rotate {
+  animation-name: round;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+.rhombus {
+  animation: up-down 1.5s linear infinite alternate;
+  -webkit-animation: up-down 1.5s linear infinite alternate;
+}
+.emptyCircle {
+  animation: up-down 1.5s linear infinite alternate;
+  -webkit-animation: up-down 1.5s linear infinite alternate;
+}
+.zigzag {
+  animation: left-right 1.5s linear infinite alternate;
+  -webkit-animation: left-right 1.5s linear infinite alternate;
+}
+.borderSquare {
+  animation: left-right 1.5s linear infinite alternate;
+  -webkit-animation: left-right 1.5s linear infinite alternate;
+}
+.section-sp1 {
+  padding-bottom: 70px;
+  padding-top: 100px;
+}
+.section-sp3 {
+  padding-bottom: 0;
+  padding-top: 100px;
+}
+.up {
+  animation: up-down 1.5s linear infinite alternate;
+  -webkit-animation: up-down 1.5s linear infinite alternate;
+}
+.r-l {
+  animation: left-right 1.5s linear infinite alternate;
+  -webkit-animation: left-right 1.5s linear infinite alternate;
+}

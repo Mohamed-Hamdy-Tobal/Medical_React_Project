@@ -1,0 +1,24 @@
+.countBox {
+  width: 300px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  padding: 20px;
+  font-size: 25px;
+}
+.TextBox {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  padding: 20px;
+  font-size: 25px;
+}

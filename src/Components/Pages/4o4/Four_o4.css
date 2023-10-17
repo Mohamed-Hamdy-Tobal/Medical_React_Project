@@ -1,0 +1,55 @@
+.error-404 .inner-content {
+    margin: auto;
+    max-width: 550px;
+    text-align: center;
+}
+.error-404 .error-title {
+    font-size: 180px;
+    line-height: 180px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: var(--main-color);
+}
+.error-404 .error-title span {
+    background-image: url('../../../imgs/error.4b5472f14025469a16d7.gif.crdownload');
+    background-size: 100%;
+    display: inline-block;
+    height: 145px;
+    margin: 0 10px;
+    width: 145px;
+}
+.error-404 .error-text {
+    margin-bottom: 15px;
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 0 35px;
+}
+.error-404 p {
+    margin-bottom: 30px;
+    color: #555;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.error-404  .btn {
+    background-color: #565acf;
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: all .5s;
+}
+.error-404  .btn:hover {
+    background-color: #494db0
+}
+
+@media (max-width: 767px) {
+    .error-404 .error-title {
+        font-size: 150px;
+    }
+    .error-404 .error-title span {
+        height: 130px;
+        width: 130px;
+    }
+}

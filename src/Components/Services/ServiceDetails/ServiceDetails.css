@@ -1,0 +1,178 @@
+.list-check-squer li {
+    color: #1f2278;
+    display: block;
+    font-family: Roboto Condensed;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 8px 15px 7px 50px;
+    position: relative;
+}
+.list-check-squer li i {
+    background-color: #565acf;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-weight: 900;
+    height: 35px;
+    left: 0;
+    line-height: 35px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: all .5s;
+    width: 35px;
+}
+.skillbar-box h6{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 22px;
+}
+.skillbar-box .skillbar {
+    background: rgba(0,0,0,.15);
+    border-radius: 10px;
+    display: inline-block;
+    height: 6px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.skillbar-box .skillbar-bar {
+    background: #565acf;
+    border-radius: 10px;
+    display: inline-block;
+    height: 6px;
+    margin-bottom: 0;
+    overflow: visible!important;
+    overflow: initial!important;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.skillbar-box .skillbar-bar:after {
+    background: #fff;
+    border: 3px solid #565acf;
+    border-radius: 15px;
+    content: "";
+    height: 20px;
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    width: 20px;
+}
+.skillbar-box .skill-bar-percent {
+    color: #565acf;
+    font-size: 22px;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: -40px;
+
+}
+.post-serv {
+    margin-bottom: 30px;
+}
+.service-details .head-text .title {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.service-details .head-text p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+}
+.service-details .accordion {
+    padding: 0px;
+}
+.service-details .widget {
+    margin-bottom: 40px;
+}
+.service-menu li {
+    margin-bottom: 10px;
+}
+.service-menu li a {
+    background-color: #565acf;
+    border-radius: 8px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    font-weight: 500;
+    padding: 15px 50px 15px 20px;
+    position: relative;
+    text-transform: capitalize;
+    transition: all .5s;
+    z-index: 1;
+}
+.service-menu li.active a,
+.service-menu li:hover a {
+    background-color: #f17732;
+}
+.brochure-bx .title-head {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    position: relative;
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 25px;
+}
+.brochure-bx .title-head:after {
+    background: #565acf;
+    bottom: -2px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+}
+.download-link {
+    background-color: #565acf;
+    border-radius: 8px;
+    display: block;
+    margin-top: 20px;
+    padding: 15px 15px 15px 65px;
+    position: relative;
+}
+.download-link img {
+    left: 15px;
+    position: absolute;
+    top: 18px;
+    width: 40px;
+}
+.download-link .title {
+    color: #fff;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+}
+.download-link span {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.service-details .accordion-item:last-child {
+    margin-bottom: 0;
+}
+.service-details .blog-single {
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+
+@media (max-width: 991px) {
+    .list-check-squer li {
+        font-size: 17px;
+    }
+    .aside-bx {
+        margin-top: 40px;
+    }
+}

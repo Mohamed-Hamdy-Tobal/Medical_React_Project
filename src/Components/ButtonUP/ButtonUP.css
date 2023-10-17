@@ -1,0 +1,23 @@
+button.scroll-to-top-button {
+    background-color: #565acf;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 0;
+    bottom: 15px;
+    box-shadow: 0 10px 30px 0 rgba(31,34,120,.1);
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    width: 45px;
+    z-index: 999;
+    display: none;
+}
+.scroll-to-top-button.visible {
+    display: block;
+}
