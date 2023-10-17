@@ -8,6 +8,24 @@ import { Link } from 'react-router-dom';
 
 function Header() {
 
+    const [isHeaderOpen, setIsHeaderOpen] = useState(false)
+
+    const toggleHeader = () => {
+        setIsHeaderOpen(!isHeaderOpen);
+    };
+    
+    const toggleFocus = () => {
+        setIsHeaderOpen(!isHeaderOpen);
+    };
+
+
+    const [isSearchShow, setSearchShow] = useState(false)
+    const toggleSearch = () => {
+        setSearchShow(!isSearchShow)
+        console.log(isSearchShow)
+    }
+
+    
     const navs = [
         {
             title: 'Pages',
@@ -40,25 +58,13 @@ function Header() {
         return (
             <NavDropdown title={nav.title} id="basic-nav-dropdown" className="custom-dropdown" key={idx}>
                 {nav.items.map((item) => (
-                    <Link key={item.name} to={item.href} data-rr-ui-dropdown-item="" className="dropdown-item" role="button" tabindex="0">
+                    <Link key={item.name} to={item.href} data-rr-ui-dropdown-item="" className="dropdown-item" role="button" tabindex="0" onFocus={toggleFocus}>
                         {item.name}
                     </Link>
                 ))}
             </NavDropdown>
         );
     });
-    
-    const [isHeaderOpen, setIsHeaderOpen] = useState(true)
-
-    const toggleHeader = () => {
-        setIsHeaderOpen(!isHeaderOpen);
-    };
-
-    const [isSearchShow, setSearchShow] = useState(false)
-    const toggleSearch = () => {
-        setSearchShow(!isSearchShow)
-        console.log(isSearchShow)
-    }
 
     return (
         <Navbar expand="lg" className={`bg-gray-200 test`}>
@@ -80,9 +86,9 @@ function Header() {
                     </button>
                     <Navbar.Brand href="#home" className='d-none brand-menue'><img src={whiteLogo} alt='logo' style={{width:'120px'}}/></Navbar.Brand>
                     <Nav className="ms-auto">
-                        <Link to='/' data-rr-ui-event-key="#link padd" className="nav-link">Home</Link>
+                        <Link to='/' data-rr-ui-event-key="#link padd" className="nav-link" onFocus={toggleFocus}>Home</Link>
                         {navsDrop}
-                        <Link to="/contact" data-rr-ui-event-key="#link padd" className="nav-link">Contact Us</Link>
+                        <Link to="/contact" data-rr-ui-event-key="#link padd" className="nav-link" onFocus={toggleFocus}>Contact Us</Link>
                     </Nav>
                     <Nav className="">
                         <Nav.Link href="#home" className='phoneAndGlass glas-max' onClick={toggleSearch}><i className="fa fa-search search"></i></Nav.Link>

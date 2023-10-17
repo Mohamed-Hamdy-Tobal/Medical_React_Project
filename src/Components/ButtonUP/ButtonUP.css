@@ -15,8 +15,9 @@ button.scroll-to-top-button {
     right: 15px;
     text-align: center;
     width: 45px;
-    z-index: 999;
+    z-index: 9999;
     display: none;
+    box-shadow: 0 0 10px 0 #00000054;
 }
 .scroll-to-top-button.visible {
     display: block;

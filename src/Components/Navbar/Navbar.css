@@ -349,6 +349,12 @@ nav .social li:hover {
     nav .navbar-nav .dropdown-menu a:is(:hover, :active, :focus){
         color: var(--btn-color);
     }
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: transparent !important;
+    }
+    nav .navbar-nav .dropdown-menu a:is(:focus){
+        background-color: var(--btn-color);
+    }
     .dropdown-item:focus, .dropdown-item:hover {
         background-color: initial !important;
     }
@@ -357,5 +363,8 @@ nav .social li:hover {
     }
     nav .social {
         display: flex !important;
+    }
+    nav .contact-btn {
+        display: none;
     }
 }
