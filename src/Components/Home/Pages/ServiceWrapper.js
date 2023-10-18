@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick'; // Import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 const SliderComponent = () => {
     const [slider, setSlider] = useState(null);
@@ -57,7 +58,7 @@ const SliderComponent = () => {
                         <h2 class="title">We Cover A Big Variety Of Medical Services</h2>
                         <p>We provide the special tips and advice’s of heath care treatment and high level of best.</p>
                     </div>
-                    <a class="btn btn-secondary btn-lg ser-btn" href="/react/services">All Services</a>
+                    <Link class="btn btn-secondary btn-lg ser-btn" href="/services/service">All Services</Link>
                 </div>
                 <div class="col-xl-8 mb-15 main-slider">
                     <Slider ref={slider => setSlider(slider)} {...settings}>
