@@ -56,7 +56,9 @@ const Footer = () => {
                         <div className='title-foot'>
                             <h2>Subcribe</h2>
                         </div>
-                        <form>
+                        <form  onSubmit={(e) => {
+                            e.preventDeault()
+                        }}>
                             <input type='email' placeholder='Email Address'/>
                             <button className='send'>Subcribe Now</button>
                         </form>
